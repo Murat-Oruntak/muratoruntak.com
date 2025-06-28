@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Certificates and qualifications earned by Murat Can Oruntak in cybersecurity and related fields">
+  <title>Certificates | Murat Can Oruntak</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>��</text></svg>">
+  <style>
+    #matrix {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      opacity: 0.08;
+    }
+    .certificate-img {
+      width: 300px;
+      min-width: 180px;
+      max-width: 100%;
+      border-radius: 0.7rem;
+      box-shadow: 0 0 12px #222;
+      border: 1px solid #444;
+      object-fit: cover;
+      display: block;
+    }
+    .certificate-title {
+      color: #20b6ff;
+      font-weight: 500;
+      font-family: 'Fira Code', monospace;
+      font-size: 2.1rem;
+      line-height: 1.2;
+      display: inline-block;
+    }
+    @media (max-width: 700px) {
+      .certificate-img-list {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .certificate-img {
+        width: 100%;
+        min-width: 0;
+        margin-bottom: 1.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="matrix"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-content">
+      <div class="nav-brand">Murat Can Oruntak</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Header Section -->
+    <section class="section glow-box fade-in">
+      <h1 class="prompt">ls certificates</h1>
+      <p>Professional certifications and academic achievements in cybersecurity and related fields.</p>
+    </section>
+
+    <!-- Degrees and Certificates Section -->
+    <section class="section glow-box fade-in">
+      <h2>Degrees</h2>
+      <ul>
+        <li>
+          <strong><span class="certificate-title">METU – MSc in Cybersecurity</span></strong>
+          <br>
+          <em>Master's degree from Middle East Technical University in Cybersecurity.</em>
+        </li>
+        <li>
+          <strong><span class="certificate-title">METU – BSc in Psychology</span></strong>
+          <br>
+          <em>Bachelor's degree from Middle East Technical University in Psychology.</em>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section glow-box fade-in">
+      <h2>Certificates</h2>
+      <ul>
+        <li>
+          <strong><a href="https://courses.edx.org/certificates/40319f5cbed34808a1ee0b6bf79f6a1f" target="_blank" class="certificate-title">BerkeleyX/edX – Bitcoin and Cryptocurrencies</a></strong>
+          <br>
+          <em>Verified certificate for completing the 'Bitcoin and Cryptocurrencies' course by University of California, Berkeley (edX).</em>
+        </li>
+        <li>
+          <strong><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-BEZRZDALEB.pdf" target="_blank" class="certificate-title">TryHackMe – Pre Security Learning Path</a></strong>
+          <br>
+          <em>Certificate of completion for the Pre Security Learning Path on TryHackMe.</em>
+        </li>
+        <li class="certificate-img-list" style="display: flex; align-items: flex-start; gap: 2rem;">
+          <img src="MURAT CAN ORUNTAK.png" alt="Cyber Security Expertise 260 Hours Certificate" class="certificate-img">
+          <div>
+            <strong><span class="certificate-title">GlobalCert/IATELS/Bilişim Academy – Cyber Security Expertise 260 Hours</span></strong>
+            <br>
+            <em>Certificate for successfully completing the 260-hour Cyber Security Expertise training program and exam.</em>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Back to Home Section -->
+    <section class="section fade-in">
+      <a href="index.html" class="btn">← Back to Home</a>
+    </section>
+  </main>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Back to top">↑</button>
+
+  <!-- Scripts -->
+  <script src="matrix.js"></script>
+  <script>
+    // Scroll animation
+    const fadeIns = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    fadeIns.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
