@@ -44,39 +44,43 @@ body {
 }
 
 .nav-content {
-  max-width: 100%;
-  margin: 0;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  width: 100%;
   position: relative;
 }
 
 .nav-brand {
+  flex: 0 0 auto;
   color: #00ffff;
   text-shadow: 0 0 1.5px #00ffff, 0 0 2.5px #39d9ff;
   font-family: 'Fira Code', monospace;
   font-weight: 500;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   white-space: nowrap;
-  margin-left: 2.5rem;
-  margin-right: 0;
+  margin-left: 1.2rem;
+  margin-right: auto;
+  z-index: 2;
 }
 
 .nav-links {
+  flex: 1 1 0;
   display: flex;
   justify-content: center;
-  gap: 2.2rem;
+  align-items: center;
+  gap: 1.5rem;
   list-style: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  position: static;
+  left: unset;
+  transform: none;
 }
 
 .nav-links a {
   color: #eaeaea;
   text-decoration: none;
-  font-size: 2.2rem;
+  font-size: 1.7rem;
   font-weight: 500;
   font-family: 'Fira Code', monospace;
   transition: all 0.3s ease;
@@ -465,4 +469,15 @@ li:hover {
   font-size: 2.8rem;
   font-family: 'Fira Code', monospace;
   margin-bottom: 1.8rem;
+}
+
+/* Disable text selection for non-editable elements */
+body, .nav, .nav-content, .nav-brand, .nav-links, .section, h1, h2, h3, h4, h5, h6, p, ul, li, span, div {
+  user-select: none;
+  caret-color: transparent;
+}
+
+input, textarea, pre, code {
+  user-select: text;
+  caret-color: auto;
 }
