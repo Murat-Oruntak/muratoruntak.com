@@ -525,6 +525,19 @@ li:hover {
   .section ul li {
     font-size: 1.1rem !important;
   }
+  .section .prompt,
+  .section h1,
+  .section h2,
+  .section h3,
+  .exit-btn {
+    font-size: 1.3rem !important;
+  }
+  .section ul li {
+    font-size: 1rem !important;
+  }
+  p, li {
+    font-size: 1rem !important;
+  }
 }
 
 .main-content > .section:first-child {
