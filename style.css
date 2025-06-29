@@ -519,6 +519,9 @@ li:hover {
     margin-top: 0;
     padding-top: 0 !important;
   }
+  .exit-btn {
+    font-size: 1.3rem !important;
+  }
 }
 
 .main-content > .section:first-child {
