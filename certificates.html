@@ -59,6 +59,11 @@
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-content">
+      <div class="hamburger" id="hamburger-menu" aria-label="Open navigation" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="articles.html">Articles</a></li>
@@ -140,6 +145,18 @@
     }, { threshold: 0.1 });
     
     fadeIns.forEach(el => observer.observe(el));
+
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+    hamburger.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        navLinks.classList.toggle('active');
+      }
+    });
   </script>
 </body>
 </html>

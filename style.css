@@ -524,3 +524,51 @@ input, textarea, pre, code {
   user-select: text;
   caret-color: auto;
 }
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 2001;
+}
+.hamburger span {
+  display: block;
+  width: 28px;
+  height: 4px;
+  margin: 4px 0;
+  background: #00ffff;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+@media (max-width: 700px) {
+  .hamburger {
+    display: flex;
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #232629;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    padding: 2.5rem 2rem 2rem 2rem;
+    box-shadow: 0 8px 32px 0 rgba(38, 139, 210, 0.18);
+    border-radius: 0 0 2.2rem 2.2rem;
+    z-index: 2000;
+    gap: 2.2rem;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}
