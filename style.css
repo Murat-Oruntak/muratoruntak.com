@@ -530,13 +530,16 @@ li:hover {
   .section h2,
   .section h3,
   .exit-btn {
-    font-size: 1.3rem !important;
+    font-size: 1.7rem !important;
   }
   .section ul li {
     font-size: 1rem !important;
   }
   p, li {
     font-size: 1rem !important;
+  }
+  .section em {
+    color: #fff !important;
   }
 }
 
@@ -667,4 +670,8 @@ input, textarea, pre, code {
   font-family: 'Fira Code', monospace;
   font-weight: 500;
   margin-bottom: 1.8rem;
+}
+
+.section em {
+  color: #fff !important;
 }
