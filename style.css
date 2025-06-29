@@ -498,7 +498,7 @@ li:hover {
     margin-bottom: 2rem;
   }
   .main-content {
-    padding: 7rem 0 0 0;
+    padding-top: 0 !important;
   }
   h1, h2, h3 {
     font-size: 1.3rem !important;
