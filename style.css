@@ -436,9 +436,9 @@ li:hover {
 
 @media (max-width: 700px) {
   .nav-content {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
   }
   .nav-brand {
     font-size: 1.3rem;
@@ -474,6 +474,13 @@ li:hover {
     width: 100%;
     min-width: 0;
     margin-bottom: 1.2rem;
+  }
+  .hamburger {
+    display: flex;
+    position: absolute;
+    top: 1.2rem;
+    left: 2rem;
+    right: auto;
   }
 }
 
@@ -551,7 +558,8 @@ input, textarea, pre, code {
     display: flex;
     position: absolute;
     top: 1.2rem;
-    right: 2rem;
+    left: 2rem;
+    right: auto;
   }
   .nav-links {
     display: none;
@@ -571,4 +579,10 @@ input, textarea, pre, code {
   .nav-links.active {
     display: flex;
   }
+}
+
+/* Ensure font sizes for whoami and ls -la sections are the same */
+.section .prompt,
+.section h2 {
+  font-size: 2.8rem !important;
 }
