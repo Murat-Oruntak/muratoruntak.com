@@ -516,7 +516,7 @@ li:hover {
     font-size: 1.3rem;
   }
   .main-content > .section:first-child {
-    margin-top: 1.2rem;
+    margin-top: 0;
   }
 }
 
