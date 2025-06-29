@@ -367,6 +367,10 @@ li:hover {
     width: 45px;
     height: 45px;
   }
+  .section .prompt,
+  .section h2 {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -400,6 +404,10 @@ li:hover {
     font-size: 1rem;
     width: 35px;
     height: 35px;
+  }
+  .section .prompt,
+  .section h2 {
+    font-size: 1.3rem;
   }
 }
 
@@ -439,6 +447,34 @@ li:hover {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    position: relative;
+    padding: 0 0.5rem;
+  }
+  .hamburger {
+    display: flex;
+    position: static;
+    margin-right: 1.5rem;
+    margin-left: 0;
+    z-index: 2001;
+  }
+  .nav-links {
+    position: static;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #232629;
+    width: auto;
+    min-width: 60vw;
+    max-width: 90vw;
+    padding: 2.5rem 2rem 2rem 2rem;
+    box-shadow: 0 8px 32px 0 rgba(38, 139, 210, 0.18);
+    border-radius: 0 0 2.2rem 2.2rem;
+    z-index: 2000;
+    gap: 2.2rem;
+    margin-left: 0;
+  }
+  .nav-links.active {
+    display: flex;
   }
   .nav-brand {
     font-size: 1.3rem;
@@ -475,12 +511,9 @@ li:hover {
     min-width: 0;
     margin-bottom: 1.2rem;
   }
-  .hamburger {
-    display: flex;
-    position: absolute;
-    top: 1.2rem;
-    left: 2rem;
-    right: auto;
+  .section .prompt,
+  .section h2 {
+    font-size: 1.3rem;
   }
 }
 
@@ -512,12 +545,13 @@ li:hover {
   }
 }
 
-.section .prompt[onclick] {
+.section .prompt,
+.section h2 {
+  font-size: 2.4rem;
   color: #00ffff;
   text-shadow: 0 0 1.5px #00ffff, 0 0 2.5px #39d9ff;
-  font-weight: 500;
-  font-size: 2.8rem;
   font-family: 'Fira Code', monospace;
+  font-weight: 500;
   margin-bottom: 1.8rem;
 }
 
@@ -556,25 +590,26 @@ input, textarea, pre, code {
 @media (max-width: 700px) {
   .hamburger {
     display: flex;
-    position: absolute;
-    top: 1.2rem;
-    left: 2rem;
-    right: auto;
+    position: static;
+    margin-right: 1.5rem;
+    margin-left: 0;
+    z-index: 2001;
   }
   .nav-links {
+    position: static;
     display: none;
     flex-direction: column;
     align-items: flex-start;
     background: #232629;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100vw;
+    width: auto;
+    min-width: 60vw;
+    max-width: 90vw;
     padding: 2.5rem 2rem 2rem 2rem;
     box-shadow: 0 8px 32px 0 rgba(38, 139, 210, 0.18);
     border-radius: 0 0 2.2rem 2.2rem;
     z-index: 2000;
     gap: 2.2rem;
+    margin-left: 0;
   }
   .nav-links.active {
     display: flex;
@@ -584,5 +619,10 @@ input, textarea, pre, code {
 /* Ensure font sizes for whoami and ls -la sections are the same */
 .section .prompt,
 .section h2 {
-  font-size: 2.8rem !important;
+  font-size: 2.4rem;
+  color: #00ffff;
+  text-shadow: 0 0 1.5px #00ffff, 0 0 2.5px #39d9ff;
+  font-family: 'Fira Code', monospace;
+  font-weight: 500;
+  margin-bottom: 1.8rem;
 }
