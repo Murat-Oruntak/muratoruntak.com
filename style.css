@@ -516,12 +516,12 @@ li:hover {
     font-size: 1.3rem;
   }
   .main-content > .section:first-child {
-    margin-top: 2rem;
+    margin-top: 1.2rem;
   }
 }
 
 .main-content > .section:first-child {
-  margin-top: 6rem;
+  margin-top: 2.5rem;
 }
 
 /* Scrollbar styling */
