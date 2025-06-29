@@ -515,6 +515,13 @@ li:hover {
   .section h2 {
     font-size: 1.3rem;
   }
+  .main-content > .section:first-child {
+    margin-top: 2rem;
+  }
+}
+
+.main-content > .section:first-child {
+  margin-top: 6rem;
 }
 
 /* Scrollbar styling */
@@ -533,16 +540,6 @@ li:hover {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #4ec9b0;
-}
-
-.main-content > .section:first-child {
-  margin-top: 0;
-}
-
-@media (max-width: 600px) {
-  .main-content > .section:first-child {
-    margin-top: 0 !important;
-  }
 }
 
 .section .prompt,
