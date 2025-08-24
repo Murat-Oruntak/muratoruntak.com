@@ -45,6 +45,39 @@
       line-height: 1.2;
       display: inline-block;
     }
+    .section > p {
+      font-size: 1.6rem;
+      font-family: 'Fira Code', monospace;
+      font-weight: 400;
+      color: #eaeaea;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .section em {
+      font-size: 1.6rem !important;
+      font-family: 'Fira Code', monospace !important;
+      font-weight: 400 !important;
+      color: #eaeaea !important;
+    }
+    .pdf-link {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: linear-gradient(135deg, #20b6ff, #0ff);
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-family: 'Fira Code', monospace;
+      font-weight: 500;
+      font-size: 1.4rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 10px rgba(32, 182, 255, 0.3);
+    }
+    .pdf-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(32, 182, 255, 0.5);
+      text-decoration: none;
+    }
   </style>
 </head>
 
@@ -85,14 +118,14 @@
           <br>
           <em>Survey of best practices, cryptographic methods, and real-world pitfalls in storing user passwords securely.</em>
           <br>
-          <em><!-- PDF link placeholder --></em>
+          <a href="A_Comprehensive_Survey_on_Secure_Password_Storage.pdf" target="_blank" class="pdf-link">📄 View PDF</a>
         </li>
         <li>
           <strong><span class="certificate-title">Literature Review On SPEEDY Family of Block Cyphers</span></strong>
           <br>
           <em>Overview and analysis of the SPEEDY block cipher family, focusing on design, security, and performance.</em>
           <br>
-          <em><!-- PDF link placeholder --></em>
+          <a href="SPEEDY_Analysis_2214518.pdf" target="_blank" class="pdf-link">📄 View PDF</a>
         </li>
       </ul>
     </section>
