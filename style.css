@@ -77,14 +77,11 @@ body {
   transform: none;
 }
 
-.nav-links a {
-  color: #eaeaea;
-  text-decoration: none;
-  font-size: 1.7rem;
-  font-weight: 500;
-  font-family: 'Fira Code', monospace;
-  transition: all 0.3s ease;
-  position: relative;
+.nav-links a, .nav-links a * {
+  font-size: 1.7rem !important;
+  font-family: 'Fira Code', monospace !important;
+  font-weight: 500 !important;
+  color: #eaeaea !important;
 }
 
 .nav-links a:hover {
@@ -106,6 +103,10 @@ body {
 
 .nav-links a:hover::after {
   width: 100%;
+}
+
+.nav-links a[href="index.html"] {
+  font-size: calc(1.7rem + 1px) !important;
 }
 
 /* Main content */
